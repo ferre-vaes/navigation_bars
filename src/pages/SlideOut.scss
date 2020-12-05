@@ -1,0 +1,57 @@
+.container {
+  height: 100vh;
+  margin: 0;
+  background: rgb(36, 40, 49);
+  color: white;
+  display: grid;
+  place-content: center;
+}
+
+header {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+
+  .activator {
+    padding: 1em;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: rgb(30, 33, 41);
+    clip-path: inset(0% -50% 0% 0% round 50%);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: rgb(41, 46, 56);
+  border-radius: 0 5em 5em 0;
+  padding: .5em;
+  clip-path: ellipse(50% 50% at -50% 50%);
+
+  ul {
+    display: flex;
+
+    li a {
+      display: block;
+      padding: .5em;
+      margin: 0 .5em;
+      border-radius: 50%;
+      transition: background-color .3s;
+
+      &:hover {
+        background-color: rgb(50, 56, 68);
+      }
+
+      img {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+    }
+  }
+}
